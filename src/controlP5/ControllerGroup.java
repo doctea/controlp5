@@ -519,7 +519,23 @@ public abstract class ControllerGroup< T > implements ControllerInterface< T > ,
 			cp5.getWindow( ).removeTab( ( Tab ) this );
 		}
 	}
+	
 
+	
+	/**
+	 * removes the group's controllers from controlP5.
+	 */
+	//@Override
+	protected void removeControllers( ) {
+		for ( int i = controllers.size( ) - 1 ; i >= 0 ; i-- ) {
+			controllers.get( i ).remove( );
+		}
+		controllers.clear( );
+		controllers.clearDrawable( );
+		controllers = new ControllerList( );
+	}
+	
+	
 	public String getName( ) {
 		return _myName;
 	}

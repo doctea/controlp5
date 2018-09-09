@@ -86,11 +86,11 @@ public class ControllerList {
 		return controllers.size( );
 	}
 
-	protected void clear( ) {
+	public void clear( ) {
 		controllers.clear( );
 	}
 
-	protected void clearDrawable( ) {
+	public void clearDrawable( ) {
 		drawables.clear( );
 	}
 
