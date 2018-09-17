@@ -690,6 +690,8 @@ public class ControlP5 extends ControlP5Base {
 	private boolean checkName( String theName ) {
 		if ( _myControllerMap.containsKey( checkAddress( theName ) ) ) {
 			ControlP5.logger( ).warning( "Controller with name \"" + theName + "\" already exists. overwriting reference of existing controller." );
+			this.remove(checkAddress( theName ));
+			_myControllerMap.remove(checkAddress( theName ));
 			return true;
 		}
 		return false;
