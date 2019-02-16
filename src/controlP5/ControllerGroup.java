@@ -42,7 +42,7 @@ public abstract class ControllerGroup< T > implements ControllerInterface< T > ,
 	protected float[] position = new float[ 2 ];
 	protected float[] positionBuffer = new float[ 2 ];
 	protected float[] absolutePosition = new float[ 2 ];
-	protected ControllerList controllers;
+	public ControllerList controllers;
 	protected List< ControlListener > _myControlListener;
 	// protected ControlWindow _myControlWindow;
 	protected ControlP5 cp5;
@@ -526,7 +526,7 @@ public abstract class ControllerGroup< T > implements ControllerInterface< T > ,
 	 * removes the group's controllers from controlP5.
 	 */
 	//@Override
-	protected void removeControllers( ) {
+	public void removeControllers( ) {
 		for ( int i = controllers.size( ) - 1 ; i >= 0 ; i-- ) {
 			controllers.get( i ).remove( );
 		}

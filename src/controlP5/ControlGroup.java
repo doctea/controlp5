@@ -196,4 +196,9 @@ public class ControlGroup< T > extends ControllerGroup< T > implements ControlLi
 		return _myControlListener.size( );
 	}
 
+	public T removeListeners () {	// doctea for clearing up memory, hopefully
+		_myControlListener.clear();
+		return me;
+	}
+
 }

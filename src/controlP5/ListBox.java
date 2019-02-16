@@ -132,6 +132,9 @@ public class ListBox extends Controller< ListBox > implements ControlListener {
 				// n += itemRange; /* UP */
 				int index = ( int ) n + itemIndexOffset;
 
+				if (index>=items.size())	// doctea attempted fix for crash
+					return;
+				
 				Map m = items.get( index );
 
 				switch ( _myType ) {
