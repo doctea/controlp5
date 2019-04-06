@@ -41,7 +41,7 @@ import processing.core.PGraphics;
  */
 public class Label implements CDrawable {
 
-	public static boolean isToUpperCaseDefault = true;
+	public static boolean isToUpperCaseDefault = false;
 	protected int _myLetterSpacing = 0;
 	protected boolean isMultiline;
 	protected boolean isFixedSize;

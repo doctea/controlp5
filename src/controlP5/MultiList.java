@@ -50,7 +50,7 @@ public class MultiList extends Controller< MultiList > implements MultiListInter
 	protected int _myDirection = ControlP5Constants.RIGHT;
 	public int closeDelay = 30;
 	protected int _myDefaultButtonHeight = 10;
-	protected boolean isUpperCase = true;
+	protected boolean isUpperCase = false;
 
 	/**
 	 * Convenience constructor to extend MultiList.
